@@ -58,3 +58,14 @@ validators
 varint
 varsig
 whitespace
+multidid
+multicode
+multicodes
+xe
+xea
+xeb
+xec
+xed
+pkh
+xca
+RSA

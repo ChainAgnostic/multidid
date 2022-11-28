@@ -1,6 +1,6 @@
 # did:*
 
-The "any" DID method encoding allows any DID to be represented as a MultiDID by essentially putting the entire DID string in the URL portion of the multidid byte string.
+The "any" DID method encoding allows any DID to be represented as a multidid by essentially putting the entire DID string in the URL portion of the multidid byte string.
 
 ## Method multicodec
 

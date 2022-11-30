@@ -4,7 +4,7 @@
 
 The Code of Conduct is available in the repository in [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
 
-Contact for Code of Conduct issues or inquires: hello@brooklynzelenka.com, hello@fission.codes
+Contact for Code of Conduct issues or inquires:  jcaballero@centre.io.
 
 ## License Acceptance
 
@@ -17,6 +17,14 @@ A Licensee may consent to accepting the current Community Specification License 
 Licensee’s name: Joel Thorstensson
 
 Authorized individual and system identifier: oed
+
+Specification version: 0.1.0 or later
+
+---------------------------------------------------------------------------------
+
+Licensee’s name: Brooklyn Zelenka
+
+Authorized individual and system identifier: expede
 
 Specification version: 0.1.0 or later
 

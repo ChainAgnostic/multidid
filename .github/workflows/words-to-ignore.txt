@@ -11,6 +11,8 @@ JWT
 JWT-encoded
 JWTs
 Krüger
+multiDID
+multi-DID
 Philipp
 Pre-Draft
 SIWE

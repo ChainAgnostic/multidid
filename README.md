@@ -16,7 +16,7 @@ Where:
 * `method-code` - a varint encoded multicode for the [DID Method](https://www.w3.org/TR/did-core/#a-simple-example)
 * `method-bytes` - data representing the method-id
 * `url-length` - a varint describing the length of the `url-bytes` parameter
-* `url-bytes` - a *ascii* encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
+* `url-bytes` - a *ASCII* encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
 
 ## Method multicodes
 

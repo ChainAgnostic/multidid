@@ -2,7 +2,7 @@
 
 > A very compact representation of DIDs and DID URLs
 
-Multidid is a representation strategy for DIDs and DID URLs that is very compact and extensible. It allows any DID method to be represented as a byte string.
+Multidid is a representation strategy for DIDs and DID URLs that is very compact and extensible. It allows any DID method to be represented as a string of bytes.
 
 ## Format
 

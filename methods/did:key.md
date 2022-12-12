@@ -19,13 +19,13 @@ The [Key DID method](https://w3c-ccg.github.io/did-method-key) encoding leverage
 ## Format
 
 ```
-<multicodec-did><method-multicodec><method-bytes><url-length><url-bytes>
+<multidid-code><method-code><method-bytes><url-length><url-bytes>
 ```
 
 Where:
 
-* `multicodec-did` - the value `0xd1d`
-* `method-multicodec` - a varint encoding of one of the codes in the table above
+* `multidid-code` - a varint encoding of `0xd1d`
+* `method-code` - a varint encoding of one of the codes in the table above
 * `method-bytes` - MUST contain exactly the number of bytes specified byte the method code
 * `url-length` - a varint describing the length of the `url-bytes` parameter
 * `url-bytes` - a UTF-8 encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
@@ -36,12 +36,12 @@ Displayed using base 16.
 
 ```
 // did:key:z6MkiTBz1ymuepAQ4HEHYSF1H8quG5GLVVQR3djdX3mDooWp
-0x0d1ded01ed013b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da29
+0x9d1aed01ed013b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da29
 
 // did:key:z6MkiTBz1ymuepAQ4HEHYSF1H8quG5GLVVQR3djdX3mDooWp#z6MkiTBz1ymuepAQ4HEHYSF1H8quG5GLVVQR3djdX3mDooWp
-0x0d1ded01ed013b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da2931237a364d6b6954427a31796d75657041513448454859534631483871754735474c5656515233646a6458336d446f6f5770
+0x9d1aed01ed013b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da2931237a364d6b6954427a31796d75657041513448454859534631483871754735474c5656515233646a6458336d446f6f5770
 
 // did:key:zQ3shokFTS3brHcDQrn82RUDfCZESWL1ZdCEJwekUDPQiYBme
-0xe70103874c15c7fda20e539c6e5ba573c139884c351188799f5458b4b41f7924f235cd
+0x9d1ae70103874c15c7fda20e539c6e5ba573c139884c351188799f5458b4b41f7924f235cd
 ```
 

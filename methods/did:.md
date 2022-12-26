@@ -4,7 +4,7 @@ The "any" DID method encoding allows any DID to be represented as a multidid by 
 
 ## Method multicodec
 
-`0x00`
+`0x55`
 
 ## Format
 
@@ -15,7 +15,7 @@ The "any" DID method encoding allows any DID to be represented as a multidid by 
 Where:
 
 * `multidid-code` - a varint encoding of `0xd1d`
-* `method-code` - a varint encoding of `0x00`
+* `method-code` - a varint encoding of `0x55`
 * `method-bytes` - MUST contain exactly zero bytes
 * `url-length` - a varint describing the length of the `url-bytes` parameter
 * `url-bytes` - a UTF-8 encoded string representing the DID and URL component (e.g. everything except `did:`)
@@ -26,8 +26,8 @@ Displayed using base 16.
 
 ```
 // did:example:123456
-0x9d1a000e6578616d706c653a313233343536
+0x9d1a370e6578616d706c653a313233343536
 
 // did:example:123456?versionId=1
-0x9d1a001a6578616d706c653a3132333435363f76657273696f6e49643d31
+0x9d1a371a6578616d706c653a3132333435363f76657273696f6e49643d31
 ```

@@ -16,7 +16,7 @@ Where:
 * `method-code` - a varint encoded multicode for the [DID Method](https://www.w3.org/TR/did-core/#a-simple-example)
 * `method-bytes` - data representing the method-id
 * `url-length` - a varint describing the length of the `url-bytes` parameter
-* `url-bytes` - a *ASCII* encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
+* `url-bytes` - a *UTF-8* encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
 
 ## Method multicodes
 
@@ -30,7 +30,7 @@ The main constraint of all specific `method-multicodec`'s is that given a code, 
 
 | Code                                                   | Method                          |
 | ------------------------------------------------------ | ------------------------------- |
-| 0x00                                                   | [did:*](./methods/did:.md)      |
+| 0x55                                                   | [did:*](./methods/did:.md)      |
 | 0xe7, 0xeb, 0xec, 0xed, 0x1200, 0x1201, 0x1202, 0x1205 | [did:key](./methods/did:key.md) |
 | 0xca                                                   | did:pkh                         |
 

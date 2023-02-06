@@ -20,7 +20,7 @@ Where:
 
 ## Method multicodes
 
-By default any DID method can be represented using the `0x00` code as the `method-code`. Any DID method can add an additional, more optimized, representation by submitting a specification to the `methods` folder in this repository, claiming a prefix in the [multicodec table](https://github.com/multiformats/multicodec/blob/master/table.csv), and adding it to the method table below.
+By default any DID method can be represented using the `0x55` code as the `method-code`. Any DID method can add an additional, more optimized, representation by submitting a specification to the `methods` folder in this repository, claiming a prefix in the [multicodec table](https://github.com/multiformats/multicodec/blob/master/table.csv), and adding it to the method table below.
 
 ### Method specific identifier length
 

@@ -1,6 +1,7 @@
 CIDs
 Canonicalization
 Canonicalized
+CASA
 DIDs
 Gozalishvili
 IPLD
@@ -42,9 +43,13 @@ expede
 inlined
 interpretable
 multicodec
+multicodecs
 multidid
+multidids
 multiformat
+multiformats
 multihash
+multihashes
 namespaced
 oed
 pre-signature
@@ -61,3 +66,14 @@ validators
 varint
 varsig
 whitespace
+multidid
+multicode
+multicodes
+xe
+xea
+xeb
+xec
+xed
+pkh
+xca
+RSA

@@ -12,8 +12,10 @@ Multidid is a representation strategy for DIDs and DID URLs that is very compact
 
 Where:
 
-* `multidid-code` - the value `0x0d1d` encoded as a varint
-* `method-code` - a varint encoded multicode for the [DID Method](https://www.w3.org/TR/did-core/#a-simple-example)
+* `multidid-code` - the value `0x0d1d` encoded as a 
+  [multiformats varint][]
+* `method-code` - a varint encoded multicode for the [DID
+  Method](https://www.w3.org/TR/did-core/#a-simple-example)
 * `method-bytes` - data representing the method-id
 * `url-length` - a varint describing the length of the `url-bytes` parameter
 * `url-bytes` - a *UTF-8* encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
@@ -37,8 +39,13 @@ The main constraint of all specific `method-multicodec`'s is that given a code, 
 ## Editors
 
 * [Joel Thorstensson](https://github.com/oed), [3Box Labs](https://3boxlabs.com/)
+* [Juan Caballero](https://github.com/bumblefudge), [CASA](https://github.com/chainAgnostic/CASA)
 
 ## Authors
 
 * [Irakli Gozalishvili](https://github.com/Gozala), [DAG House](https://dag.house/)
 * [Joel Thorstensson](https://github.com/oed), [3Box Labs](https://3boxlabs.com/)
+
+## References
+
+[multiformats varint]: https://github.com/multiformats/unsigned-varint

@@ -41,8 +41,11 @@ expede
 inlined
 interpretable
 multicodec
+multicodecs
 multiformat
+multiformats
 multihash
+multihashes
 namespaced
 oed
 pre-signature

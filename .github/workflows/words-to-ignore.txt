@@ -12,6 +12,8 @@ JWT
 JWT-encoded
 JWTs
 Krüger
+multiDID
+multi-DID
 Philipp
 Pre-Draft
 SIWE
@@ -42,6 +44,8 @@ inlined
 interpretable
 multicodec
 multicodecs
+multidid
+multidids
 multiformat
 multiformats
 multihash

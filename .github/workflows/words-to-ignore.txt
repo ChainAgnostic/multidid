@@ -1,6 +1,7 @@
 CIDs
 Canonicalization
 Canonicalized
+CASA
 DIDs
 Gozalishvili
 IPLD

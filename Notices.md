@@ -38,6 +38,15 @@ Specification version: 0.1.0 or later
 
 ---------------------------------------------------------------------------------
 
+
+Licensee’s name: Aaron Goldman
+
+Authorized individual and system identifier: AaronGoldman
+
+Specification version: 0.1.0 or later
+
+---------------------------------------------------------------------------------
+
 ## Withdrawals
 
 Name of party withdrawing:

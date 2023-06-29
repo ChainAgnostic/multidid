@@ -47,6 +47,14 @@ Specification version: 0.1.0 or later
 
 ---------------------------------------------------------------------------------
 
+Licensee’s name: Charles Cunningham
+
+Authorized individual and system identifier: chunningham
+
+Specification version: 0.1.0 or later
+
+---------------------------------------------------------------------------------
+
 ## Withdrawals
 
 Name of party withdrawing:

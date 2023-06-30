@@ -38,11 +38,18 @@ Where:
 
 ### Cosmos
 
-Cosmos supports both `secp256k1` and `secp256r1` key types. In the case of `secp256k1`, the address is 20 bytes created from a hash of the public key, while `secp256r1` uses the public key itself as the address. Thus the varint prefix of the account ID encoding acts as a discriminant between address types.
+Cosmos supports both `secp256k1` and `secp256r1` key types. In the case of `secp256k1`, the address is 20 bytes created from a hash of the public key, while `secp256r1` uses the public key itself as the address. Thus the varint prefix of the account ID encoding acts as a discriminant between address types:
+
+* 20: Secp256k1 public key hash
+* 32: Secp256r1 public key
 
 ### Hedera Hashgraph
 
-Hedera Hashgraph supports several address representations, however only the [public key account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#public-key-account-alias) and the [EVM account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#evm-address-account-alias) are supported by `did:pkh`. They are represented here without shard and realm numbers. Similarly to cosmos, this allows the varint prefix account ID encoding to act as a discriminant between address types.
+Hedera Hashgraph supports several address representations, however only the [public key account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#public-key-account-alias) and the [EVM account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#evm-address-account-alias) are supported by `did:pkh`. They are represented here without shard and realm numbers. Similarly to cosmos, this allows the varint prefix account ID encoding to act as a discriminant between address types:
+
+* 20: EVM account alias
+* 32: Ed25519 Public Key account alias
+* 33: Secp256k1 Public Key account alias
 
 ## References
 

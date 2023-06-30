@@ -7,15 +7,15 @@ The [Public Key Hash DID method](https://github.com/w3c-ccg/did-pkh/blob/main/di
 `0xca`
 
 ## CAIP-2 Encodings
-
-| CAIP-2 Namespace | Integer Code | CAIP-2 Reference Length | CAIP-2 Reference Encoding | Account ID Length | Account ID Encoding    |
-|:-----------------|:-------------|:------------------------|:--------------------------|-------------------|------------------------|
-| bip122           | 0x01         | 32 [^fn1]               | bytes                     | 25 [^fn2]         | bytes                  |
-| eip155           | 0x02         | Varint-prefixed [^fn3]  | utf-8 bytes               | 20 [^fn4]         | bytes                  |
-| cosmos           | 0x03         | Varint-prefixed         | utf-8 bytes               | 20 or 32[^fn5]    | bytes, varint-prefixed |
-| starknet         | 0x04         | Varint-prefixed         | utf-8 bytes               | 20 [^fn6]         | bytes                  |
-| hedera           | 0x05         | Varint-prefixed         | utf-8 bytes               | Variable          | 3 Varints [^fn7]       |
-| lip9             | 0x06         | 32 [^fn8]               | bytes                     | 20 [^fn9]         | bytes                  |
+    
+| CAIP-2 Namespace | Integer Code | CAIP-2 Reference Length | CAIP-2 Reference Encoding | Account ID Length  | Account ID Encoding    |
+|:-----------------|:-------------|:------------------------|:--------------------------|--------------------|------------------------|
+| bip122           | 0x01         | 32 [^fn1]               | bytes                     | 25 [^fn2]          | bytes                  |
+| eip155           | 0x02         | Varint-prefixed [^fn3]  | utf-8 bytes               | 20 [^fn4]          | bytes                  |
+| cosmos           | 0x03         | Varint-prefixed         | utf-8 bytes               | 20 or 32[^fn5]     | bytes, varint-prefixed |
+| starknet         | 0x04         | Varint-prefixed         | utf-8 bytes               | 20 [^fn6]          | bytes                  |
+| hedera           | 0x05         | Varint-prefixed         | utf-8 bytes               | 20, 32 or 33[^fn7] | bytes, varint-prefixed |
+| lip9             | 0x06         | 32 [^fn8]               | bytes                     | 20 [^fn9]          | bytes                  |
 
 ## Format
 
@@ -33,6 +33,16 @@ Where:
 * `account-id` - CAIP-10 account ID
 * `url-length` - a varint describing the length of the `url-bytes` parameter
 * `url-bytes` - a UTF-8 encoded string representing the [DID URL parameters](https://www.w3.org/TR/did-core/#did-url-syntax)
+
+## Notes
+
+### Cosmos
+
+Cosmos supports both `secp256k1` and `secp256r1` key types. In the case of `secp256k1`, the address is 20 bytes created from a hash of the public key, while `secp256r1` uses the public key itself as the address. Thus the varint prefix of the account ID encoding acts as a discriminant between address types.
+
+### Hedera Hashgraph
+
+Hedera Hashgraph supports several address representations, however only the [public key account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#public-key-account-alias) and the [EVM account alias](https://docs.hedera.com/hedera/core-concepts/accounts/account-properties#evm-address-account-alias) are supported by `did:pkh`. They are represented here without shard and realm numbers. Similarly to cosmos, this allows the varint prefix account ID encoding to act as a discriminant between address types.
 
 ## References
 

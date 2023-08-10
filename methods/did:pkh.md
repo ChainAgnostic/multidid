@@ -11,7 +11,7 @@ The [Public Key Hash DID method](https://github.com/w3c-ccg/did-pkh/blob/main/di
 | CAIP-2 Namespace | Integer Code | CAIP-2 Reference Length | CAIP-2 Reference Encoding | Account ID Length  | Account ID Encoding    |
 |:-----------------|:-------------|:------------------------|:--------------------------|--------------------|------------------------|
 | bip122           | 0x01         | 32 [^fn1]               | bytes                     | 25 [^fn2]          | bytes                  |
-| eip155           | 0x02         | Varint-prefixed [^fn3]  | utf-8 bytes               | 20 [^fn4]          | bytes                  |
+| eip155           | 0x02         | None, self-described    | Varint [^fn3]             | 20 [^fn4]          | bytes                  |
 | cosmos           | 0x03         | Varint-prefixed         | utf-8 bytes               | 20 or 32[^fn5]     | bytes, varint-prefixed |
 | starknet         | 0x04         | Varint-prefixed         | utf-8 bytes               | 20 [^fn6]          | bytes                  |
 | hedera           | 0x05         | Varint-prefixed         | utf-8 bytes               | 20, 32 or 33[^fn7] | bytes, varint-prefixed |
@@ -28,7 +28,7 @@ Where:
 * `multidid-code` - a varint encoding of `0xd1d`
 * `method-code` - a varint encoding of `0xca`
 * `caip2-namespace` - a varint encoding of the Integer Code associated with the CAIP-2 Namespace found in the table above
-* `caip2-ref-length` - If the CAIP-2 Reference is not a fixed length, MUST contain the varint-encoded byte-length of the CAIP-2 Reference
+* `caip2-ref-length` - If the CAIP-2 Reference is not a fixed length or self-describing, MUST contain the varint-encoded byte-length of the CAIP-2 Reference
 * `caip2-ref` - CAIP-2 reference identifying the chain
 * `account-id` - CAIP-10 account ID
 * `url-length` - a varint describing the length of the `url-bytes` parameter
